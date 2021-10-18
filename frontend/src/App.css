@@ -36,3 +36,122 @@
     transform: rotate(360deg);
   }
 }
+
+#App {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 10px 100px;
+  background-color:black;
+  color:greenyellow;
+}
+
+.search-input {
+  height: 30px;
+  width: 600px;
+  font-size: 14px;
+  background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  margin-right:15px;
+  background-color: #fff;
+  border: 1px;
+}
+
+.search-btn {
+  height: 30px;
+}
+
+.suggestions {
+  background-color: white;
+  color: black;
+  width: 635px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.suggestions:hover {
+  background-color: gray;
+  cursor:pointer;
+}
+
+.post {
+  height:auto;
+  position: relative;
+  width:70%;
+  background-color: #fff;
+  color:black;
+  margin-top: 20px;
+  padding:0.5em;
+  text-align: center;
+}
+
+.post-title {
+  font-weight:bold;
+}
+
+.post-body {
+  text-align:justify;
+  margin:10px;
+}
+
+.edit {
+  position:absolute;
+  right: 50px;
+  width: 60px;
+  cursor:pointer;
+  height: 20px;
+  background-color:transparent;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.edit:hover {
+  background-color: rgb(238, 215, 9);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  padding: 32px;
+  width: 40%;
+  max-width: 800px;
+  background-color: #fff;
+  height: 200px
+}
+
+.edit-title-tag {
+  padding-right: 10px;
+}
+
+.edit-post-title {
+  position: relative;
+  width: 70%;
+  height:20px;
+}
+
+.edit-post-body {
+  position: relative;
+  width: 80%;
+  height:130px;
+  margin:10px;
+}
+
+.close-btn {
+  margin-right: 20px;
+}
