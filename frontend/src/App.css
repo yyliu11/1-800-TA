@@ -88,11 +88,11 @@
   text-align: center;
 }
 
-.post-title {
+#post-title {
   font-weight:bold;
 }
 
-.post-body {
+#post-body {
   text-align:justify;
   margin:10px;
 }
@@ -139,13 +139,13 @@
   padding-right: 10px;
 }
 
-.edit-post-title {
+#edit-post-title {
   position: relative;
   width: 70%;
   height:20px;
 }
 
-.edit-post-body {
+#edit-post-body {
   position: relative;
   width: 80%;
   height:130px;

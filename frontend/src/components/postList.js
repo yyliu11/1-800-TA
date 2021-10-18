@@ -9,7 +9,7 @@ const PostList = (props) => {
 
   return (
     <div className='post'>
-      <span className='post-title'>{props.post.title}</span>
+      <span id='post-title'>{props.post.title}</span>
       <span className='edit'
       onClick={(e) => {e.preventDefault(); setEdit(true); setTitle(props.post.title);
         setPostBody(props.post.body)}}>Edit
@@ -17,7 +17,7 @@ const PostList = (props) => {
       <EditForm trigger = {edit} setTrigger = {setEdit} post = {props.post}
       title={title} setTitle={setTitle} postBody={postBody} setPostBody={setPostBody}>
       </EditForm>
-      <div className='post-body'>{props.post.body}</div>
+      <div id='post-body'>{props.post.body}</div>
     </div>
   )
 }

@@ -36,10 +36,10 @@ const EditForm = (props) => {
       <div className='inner'>
         <form>
           <label className='edit-title-tag'>Title:</label>
-          <input type='text' className='edit-post-title' value={props.title} maxLength='200'
+          <input type='text' id='edit-post-title' value={props.title} maxLength='200'
           onChange={(e) => {e.preventDefault(); onChangeHandler(e.target.value)}}/>
           <div>
-          <textarea className='edit-post-body' maxLength='2000' value={props.postBody} onChange={(e) => props.setPostBody(e.target.value)}></textarea>
+          <textarea id='edit-post-body' maxLength='2000' value={props.postBody} onChange={(e) => props.setPostBody(e.target.value)}></textarea>
           </div>
           <button className='close-btn'
           onClick={() => {props.setTrigger(false); props.setTitle(props.post.title); props.setPostBody(props.post.body)}}>Cancel</button>
